@@ -1,0 +1,609 @@
+
+*{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+} 
+
+
+
+ html{
+        font-size: 50%;
+        overflow-x: hidden;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+
+}
+
+body{
+        background-color: #fff;
+        max-width: 410px;
+        margin: 0 auto;
+}
+
+/* heading section starts */
+
+.header .header-container{
+        max-width: 410px;
+        margin: 0 auto;
+}
+
+.section .section-container h1{
+        font-size: 3rem;
+        color: #5B5B5B;
+        padding: 3rem 0;
+}
+
+
+
+.section .section-container{
+        max-width: 410px;
+        margin: 0 auto;
+        padding: 1rem 2%;
+}
+
+
+.header .header-container .header-section{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: .5rem 2%;
+    z-index: 1000;
+    max-width: 410px;
+    margin: 0 auto;
+}
+
+.header .header-container .header-section.sticky{
+        background-color: #20293c;
+        box-shadow: 0 .5rem 1rem #20293c;
+        border-bottom: .1rem solid #fff;
+}
+
+
+.header .header-container .header-section .header-section-container{
+    max-width: 410px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+
+.header .header-container .header-section .header-section-container .hotel_name img{
+        max-width: 150px;
+}
+
+.header .header-container .header-section .header-section-container .reting{
+    color: #e7a233;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    width: bold;
+}
+
+.header .header-container .header-section .header-section-container .reting span{
+        color: #fff;
+}
+
+.header .header-container .header-section .header-section-container .menu-icon i{
+        color: #fff;
+        font-size: 3rem;
+}
+
+.header .header-container .header-section .header-section-container .menu-icon i:hover{
+        cursor: pointer;
+        color: #e7a233;
+}
+
+.header .header-container .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 2%;
+}
+
+.header .header-container .nav-bar ul {
+        list-style: none;
+}
+
+.header .header-container .nav-bar ul li{
+        float: left;
+        font-size: 2rem;
+        margin: 1rem 2rem;
+}
+
+.header .header-container .nav-bar ul li a{
+        text-decoration: none;
+        color: #fff;
+        width: bold;
+}
+
+.header .header-container .nav-bar ul li a:hover{
+        color: #e7a233;
+        cursor: pointer;
+}
+
+.header .header-container .description{
+        position: absolute;
+        max-width: 410px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 15rem;
+        padding: 0 2%;
+}
+
+
+.header .header-container h1{
+        color: #fff;
+        font-size: 3rem;
+        width: bold;
+        padding-bottom: 3rem;
+}
+
+.header .header-container p{
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: justify;
+}
+
+/* heading section Ends */
+
+/* menu section starts */
+
+
+.menu-section{
+        position: absolute;
+        top: 0;
+        right: 0rem;
+        bottom: 0;
+        z-index: 1002;
+        width: 30rem;
+        height: 80rem;
+        display: none;
+        /* clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 53%); */
+}
+.menu-section .menu-container{
+        background-color: #fff;
+        box-shadow: 0 .5rem 1rem #000;
+        position: fixed;
+}
+
+
+
+
+.menu-section.active{
+        display: inline-block;
+        /* clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%, 100% 53%); */
+}
+    
+.menu-section #close {
+        position: absolute;
+        color: #000;
+        cursor: pointer;
+        top: 2rem;
+        right: 3rem;
+        font-size: 5rem;
+}
+    
+.menu-section .logo-area img {
+        width: 25rem;
+        padding: 4rem 2rem 0rem 2rem;
+}
+    
+.menu-section .lan {
+        font-size: 2rem;
+        text-align: center;
+        color: #000
+}
+    
+.menu-section .mail {
+        font-size: 1.5rem;
+        padding: 2rem;
+        color: #000;
+}
+    
+.menu-section .phone {
+        font-size: 1.5rem;
+        padding: 2rem;
+        color: #000;
+}
+    
+.menu-section .address {
+        font-size: 1.5rem;
+        padding: 2rem;
+        color: #000;
+}
+    
+    .menu-section .location {
+        font-size: 1.5rem;
+        padding: 2rem;
+        color: #000;
+}
+    
+        .menu-section .location img {
+        margin: 3rem;
+        width: 20rem;
+        border-top: .5rem solid #000;
+        border-bottom: .5rem solid #000;
+        border-left: .25rem solid #000;
+        border-right: .25rem solid #000;
+}
+    
+/* menu section ends */
+
+/* Checking section Starts */
+
+.check {
+        position: absolute;
+        background-color: #fff;
+        max-width: 410px;
+        margin: 0 auto;
+        left: 5%;
+        right: 5%;
+        top: -8rem;
+}
+    
+.check .check-container {
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto auto auto;
+        margin: 1.5rem;
+        background: #F1F1F1;
+        border: .1rem solid #d8d3d3;
+        text-align: center;
+}
+    
+.check .check-container .check-one {
+        margin: 3rem 0;
+        padding: 1rem;
+        border-right: .1rem solid #d8d3d3;
+}
+    
+.check .check-container .check-two {
+        padding: 2rem;
+        background-color: #2DA8E3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+    
+.check .check-container .check-two a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+}
+    
+.check .check-container .check-two:hover {
+        background-color: #e7a233;
+        cursor: pointer;
+}
+    
+.check .check-container .check-one h3 {
+        font-size: 1.5rem;
+        color: #878787;
+}
+    
+.check .check-container .check-one .date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+    
+.check .check-container .check-one .date .number {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #000;
+        margin-right: 1rem;
+}
+    
+.check .check-container .check-one .date .month span {
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: #ffab25;
+}
+    
+.check .check-container .check-one .date .month i {
+        font-size: 1.5rem;
+        color: #000;
+}
+    
+    
+    
+/* Checking section Ends */
+    
+/* Brand logo Section Starts */
+    
+#section1{
+        position: relative;
+}
+
+.section .section-container .brand-logo-section{
+        padding: 10rem 0 0rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+}
+
+.section .section-container .brand-logo-section .logo{
+        flex: 1 1 42rem;
+}
+
+.section .section-container .brand-logo-section .logo img{
+        width: 100%;
+}
+
+.section .section-container .brand-logo-section .discribtion{
+        flex: 1 1 42rem;
+}
+
+.section .section-container .brand-logo-section .discribtion h2{
+        width: 100%;
+        color: #878787;
+        font-size: 2rem;
+}
+
+.section .section-container h1{
+        font-size: 3rem;
+        color: #5B5B5B;
+        padding: 3rem 0;
+}
+
+.section .section-container .resort p{
+        font-size: 1.5rem;
+        text-align: justify;
+        color: #5B5B5B;
+}
+
+/* Brand logo Section Ends */
+
+/* photo Section starts */
+
+
+.section .section-container .botton-holder .btn{
+        margin: 3rem 0;
+}
+
+.section .section-container .botton-holder .btn a{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        background: #2DA8E3;
+        padding: 1rem;
+        text-decoration: none;
+        box-shadow: 0 .5rem 1rem #8f8d8d;
+        border-radius: 1rem;
+        margin-top: 2rem;
+}
+
+
+.section .section-container .botton-holder .btn a:hover{
+        background: #e7a233;
+        color: #000;
+        cursor: pointer;
+}
+    
+
+.section .images {
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        padding-top: 2rem;
+}
+    
+.section .images img {
+        width: 100%;
+}
+    
+/* photo Section Ends */
+
+
+/* Reviews section starts */
+
+.section .section-container .reviews-one .name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.section .section-container .reviews-one .name h2{
+        font-size: 2rem;
+        color: #4b4a4a;
+}
+
+.section .section-container .reviews-one .name .rated{
+        font-size: 2rem;
+        color: #307926;
+}
+
+.section .section-container .reviews-one p{
+        font-size: 1.5rem;
+        text-align: justify;
+        color: #5B5B5B;
+}
+
+/* Reviews section Ends */
+
+/* facilitie Section starts */
+
+.section .section-container .fasilitie-content{
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        padding: 3rem 0;
+}
+
+.section .section-container .fasilitie-content .box{
+        width: 100%;
+        padding: 3rem .5rem;
+        border: .01rem solid #7c7b7b;
+        box-shadow: 0 .5rem 1rem #8f8d8d;
+        text-align: center;
+        border-radius: 1rem;
+}
+
+.section .section-container .fasilitie-content .box i{
+        cursor: pointer;
+        margin: .3rem;
+        font-size: 4rem;
+        color: #fff;
+        background: #e7a233;
+        height: 8rem;
+        line-height: 8rem;
+        width: 8rem;
+        text-align: center;
+        border-radius: 50%;
+}
+
+.section .section-container .fasilitie-content .box h3{
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        font-weight: bold;
+        color: #4b4a4a
+}
+
+/* facilitie Section Ends */
+
+/* Room section starts */
+
+.section .section-container .room-container{
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        padding-top: 2rem;
+}
+
+.section .section-container .room-container .box{
+        width: 100%;
+        border: .01rem solid #7c7b7b;
+        box-shadow: 0 .5rem 1rem #8f8d8d;
+}
+
+.section .section-container .room-container .box img{
+        width: 100%;
+}
+
+
+.section .section-container .room-container .box .other{
+        text-align: center;
+        padding: 1.5rem 1rem;
+        background-color: #d8d3d3;
+}
+
+.section .section-container .room-container .box .other h3{
+        color: #000;
+        font-size: 2rem;
+}
+
+.section .section-container .room-container .box .other p{
+        font-size: 1.5rem;
+}
+
+.section .section-container .room-container .box .botton-holder .btn{
+        margin-top: 3rem
+}
+
+.section .section-container .room-container .box .botton-holder .btn a{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        background: #2DA8E3;
+        padding: 1rem;
+        text-decoration: none;
+        box-shadow: 0 .5rem 1rem #8f8d8d;
+        border-radius: 1rem;
+        margin-top: 2rem;
+}
+
+.section .section-container .room-container .box .botton-holder .btn a:hover{
+        background: #e7a233;
+        color: #000;
+        cursor: pointer;
+}
+
+
+/* Room section Ends */
+
+/* Footer section starts */
+
+.footer{
+        background: #20293C;
+        margin-top: 4rem;
+}
+
+.footer .footer-container{
+        max-width: 410px;
+        margin: 0 auto;
+        padding: 1rem 2%;
+        margin-top: 4rem;
+}
+
+.footer .footer-container .logo{
+        width: 100%;
+        padding-top: 2rem;
+}
+
+.footer .footer-container .footer-content{
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto auto;
+        gap: 4rem;
+        padding-top: 5rem;
+}
+
+
+.footer .footer-container .footer-content .map-img img{
+        width: 100%;
+}
+
+.footer .footer-container .footer-content .contact .mail h2,
+.footer .footer-container .footer-content .contact .phone h2,
+.footer .footer-container .footer-content .address h2{
+        font-size: 1.6rem;
+        color: #fff;
+}
+
+.footer .footer-container .footer-content .contact .mail,
+.footer .footer-container .footer-content .address {
+    font-size: 1rem;
+    color: #fff;
+    font-style: italic;
+}
+
+
+/* Footer section Ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
